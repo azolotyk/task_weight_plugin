@@ -3,7 +3,7 @@
 	"name": "Task Weight",
 	"description": "Калькулятор приоритета задач",
 	"version": "3.0",
-	"icons": {"128": "papyrus.png"},
+	"icons": {"128": "icon.png"},
 	"action": {
 		"default_popup": "popup.html"
 	}
