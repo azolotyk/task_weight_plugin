@@ -33,291 +33,298 @@
 
         <!-- Список табов и их контент -->
         <div class="panels">
+            <!-- Broken tests -->
             <div class="panel" id="panel-1">
                 <form>
                     <p class="panel-subtitle">Насколько эта задача полезна?</p>
                     <div data-action="measurement">
-                        <input checked id="1_1_4" name="innovation" panel_index="1" type="radio" value="21"/>
-                        <label for="1_1_4">21: Мы получаем уверенность в наших тестах и их результатах</label>
+                        <input checked id="1_0_4" name="innovation" type="radio" value="21"/>
+                        <label for="1_0_4">21: Мы получаем уверенность в наших тестах и их результатах</label>
                     </div>
 
                     <p class="panel-subtitle">Как часть воспроизводится проблема?</p>
                     <div data-action="measurement">
-                        <input checked id="1_2_1" name="risk" panel_index="1" type="radio" value="1"/>
-                        <label for="1_2_1">1: Единичный тест, должно совпасть много условий для
+                        <input checked id="1_1_1" name="risk" type="radio" value="1"/>
+                        <label for="1_1_1">1: Единичный тест, должно совпасть много условий для
                             воспроизведения</label><br>
-                        <input id="1_2_2" name="risk" panel_index="1" type="radio" value="5"/>
-                        <label for="1_2_2">5: Может стрельнуть в паре мест, но редко</label><br>
-                        <input id="1_2_3" name="risk" panel_index="1" type="radio" value="13"/>
-                        <label for="1_2_3">13: Воспроизводится в значимом количестве тестов (потенциально - на весь
+                        <input id="1_1_2" name="risk" type="radio" value="5"/>
+                        <label for="1_1_2">5: Может стрельнуть в паре мест, но редко</label><br>
+                        <input id="1_1_3" name="risk" type="radio" value="13"/>
+                        <label for="1_1_3">13: Воспроизводится в значимом количестве тестов (потенциально - на весь
                             кусок функциональности)</label><br>
-                        <input id="1_2_4" name="risk" panel_index="1" type="radio" value="21"/>
-                        <label for="1_2_4">21: Каждый тест под угрозой</label>
+                        <input id="1_1_4" name="risk" type="radio" value="21"/>
+                        <label for="1_1_4">21: Каждый тест под угрозой</label>
                     </div>
 
                     <p class="panel-subtitle">Насколько сложно реализовать эту задачу?</p>
                     <div data-action="measurement">
-                        <input checked id="1_3_1" name="level" panel_index="1" type="radio" value="1"/>
-                        <label for="1_3_1">0.5 WD: Всё понятно, быстрая правка, быстрое ревью</label><br>
-                        <input id="1_3_2" name="level" panel_index="1" type="radio" value="5"/>
-                        <label for="1_3_2">1 WD: Чёткий DoD, решение понятно, быстрое ревью</label><br>
-                        <input id="1_3_3" name="level" panel_index="1" type="radio" value="13"/>
-                        <label for="1_3_3">2 WD: Чёткий DoD, но нужен небольшой ресёрч</label><br>
-                        <input id="1_3_4" name="level" panel_index="1" type="radio" value="21"/>
-                        <label for="1_3_4">4 WD: Неясно, как именно решать проблему</label>
+                        <input checked id="1_2_1" name="level" type="radio" value="1"/>
+                        <label for="1_2_1">0.5 WD: Всё понятно, быстрая правка, быстрое ревью</label><br>
+                        <input id="1_2_2" name="level" type="radio" value="5"/>
+                        <label for="1_2_2">1 WD: Чёткий DoD, решение понятно, быстрое ревью</label><br>
+                        <input id="1_2_3" name="level" type="radio" value="13"/>
+                        <label for="1_2_3">2 WD: Чёткий DoD, но нужен небольшой ресёрч</label><br>
+                        <input id="1_2_4" name="level" type="radio" value="21"/>
+                        <label for="1_2_4">4 WD: Неясно, как именно решать проблему</label>
                     </div>
                 </form>
 
             </div>
+            <!-- Increase coverage -->
             <div class="panel" id="panel-2">
                 <form>
                     <p class="panel-subtitle">Насколько новы и полезны добавляемые тесты?</p>
                     <div data-action="measurement">
-                        <input checked id="2_1_1" name="innovation" panel_index="2" type="radio" value="1"/>
-                        <label for="2_1_1">1: Уже есть тесты, расширяем покрытие P1/P2 сценариями</label><br>
-                        <input id="2_1_2" name="innovation" panel_index="2" type="radio" value="5"/>
-                        <label for="2_1_2">5: Уже есть тесты, расширяем покрытие P0 сценариями</label><br>
-                        <input id="2_1_3" name="innovation" panel_index="2" type="radio" value="13"/>
-                        <label for="2_1_3">13: Есть часть моков/контекстов, но это первые самостоятельные
+                        <input checked id="2_0_1" name="innovation" type="radio" value="1"/>
+                        <label for="2_0_1">1: Уже есть тесты, расширяем покрытие P1/P2 сценариями</label><br>
+                        <input id="2_0_2" name="innovation" type="radio" value="5"/>
+                        <label for="2_0_2">5: Уже есть тесты, расширяем покрытие P0 сценариями</label><br>
+                        <input id="2_0_3" name="innovation" type="radio" value="13"/>
+                        <label for="2_0_3">13: Есть часть моков/контекстов, но это первые самостоятельные
                             тесты</label><br>
-                        <input id="2_1_4" name="innovation" panel_index="2" type="radio" value="21"/>
-                        <label for="2_1_4">21: Пока нет ни тестов, ни моков, ни контекстов</label>
+                        <input id="2_0_4" name="innovation" type="radio" value="21"/>
+                        <label for="2_0_4">21: Пока нет ни тестов, ни моков, ни контекстов</label>
                     </div>
 
                     <p class="panel-subtitle">А если пропустим баг в этой области?</p>
                     <div data-action="measurement">
-                        <input checked id="2_2_1" name="risk" panel_index="2" type="radio" value="1"/>
-                        <label for="2_2_1">1: Пользователь скорее всего не заметит</label><br>
-                        <input id="2_2_2" name="risk" panel_index="2" type="radio" value="5"/>
-                        <label for="2_2_2">5: Важная область - пользовательский опыт ухудшится (не сможет добавить отель
+                        <input checked id="2_1_1" name="risk" type="radio" value="1"/>
+                        <label for="2_1_1">1: Пользователь скорее всего не заметит</label><br>
+                        <input id="2_1_2" name="risk" type="radio" value="5"/>
+                        <label for="2_1_2">5: Важная область - пользовательский опыт ухудшится (не сможет добавить отель
                             в избранные)</label><br>
-                        <input id="2_2_3" name="risk" panel_index="2" type="radio" value="13"/>
-                        <label for="2_2_3">13: Критичная область - пользователь не сможет найти и забронировать
+                        <input id="2_1_3" name="risk" type="radio" value="13"/>
+                        <label for="2_1_3">13: Критичная область - пользователь не сможет найти и забронировать
                             отель</label><br>
-                        <input id="2_2_4" name="risk" panel_index="2" type="radio" value="21"/>
-                        <label for="2_2_4">21: Блокирующая область - тяжёлые последствия для продукта и бизнеса</label>
+                        <input id="2_1_4" name="risk" type="radio" value="21"/>
+                        <label for="2_1_4">21: Блокирующая область - тяжёлые последствия для продукта и бизнеса</label>
                     </div>
 
                     <p class="panel-subtitle">Насколько сложно реализовать эту задачу?</p>
                     <div data-action="measurement">
-                        <input checked id="2_3_1" name="level" panel_index="2" type="radio" value="1"/>
-                        <label for="2_3_1">0.5 WD: Всё понятно, быстрая правка, быстрое ревью</label><br>
-                        <input id="2_3_2" name="level" panel_index="2" type="radio" value="5"/>
-                        <label for="2_3_2">1 WD: Чёткий DoD, решение понятно, быстрое ревью</label><br>
-                        <input id="2_3_3" name="level" panel_index="2" type="radio" value="13"/>
-                        <label for="2_3_3">2 WD: Чёткий DoD, но нужен небольшой ресёрч</label><br>
-                        <input id="2_3_4" name="level" panel_index="2" type="radio" value="21"/>
-                        <label for="2_3_4">4 WD: Неясно, как именно решать проблему</label>
+                        <input checked id="2_2_1" name="level" type="radio" value="1"/>
+                        <label for="2_2_1">0.5 WD: Всё понятно, быстрая правка, быстрое ревью</label><br>
+                        <input id="2_2_2" name="level" type="radio" value="5"/>
+                        <label for="2_2_2">1 WD: Чёткий DoD, решение понятно, быстрое ревью</label><br>
+                        <input id="2_2_3" name="level" type="radio" value="13"/>
+                        <label for="2_2_3">2 WD: Чёткий DoD, но нужен небольшой ресёрч</label><br>
+                        <input id="2_2_4" name="level" type="radio" value="21"/>
+                        <label for="2_2_4">4 WD: Неясно, как именно решать проблему</label>
                     </div>
                 </form>
 
             </div>
+            <!-- Refactoring -->
             <div class="panel" id="panel-3">
                 <form>
                     <p class="panel-subtitle">Чем обоснован рефакторинг?</p>
                     <div data-action="measurement">
-                        <input checked id="3_1_1" name="innovation" panel_index="3" type="radio" value="1"/>
-                        <label for="3_1_1">1: Чистота кода: есть неудобство, с которым можно смириться, но лучше бы его
+                        <input checked id="3_0_1" name="innovation" type="radio" value="1"/>
+                        <label for="3_0_1">1: Чистота кода: есть неудобство, с которым можно смириться, но лучше бы его
                             не было</label><br>
-                        <input id="3_1_2" name="innovation" panel_index="3" type="radio" value="5"/>
-                        <label for="3_1_2">5: Неудобство пары модулей: периодически натыкаемся, неудобно писать
+                        <input id="3_0_2" name="innovation" type="radio" value="5"/>
+                        <label for="3_0_2">5: Неудобство пары модулей: периодически натыкаемся, неудобно писать
                             тесты</label><br>
-                        <input id="3_1_3" name="innovation" panel_index="3" type="radio" value="13"/>
-                        <label for="3_1_3">13: Критичное неудобство: постоянно спотыкаемся и не доставляем какую-то
+                        <input id="3_0_3" name="innovation" type="radio" value="13"/>
+                        <label for="3_0_3">13: Критичное неудобство: постоянно спотыкаемся и не доставляем какую-то
                             часть проверок, а то, что доставляем, пишем дольше</label><br>
-                        <input id="3_1_4" name="innovation" panel_index="3" type="radio" value="21"/>
-                        <label for="3_1_4">21: Блокер, не дающий нам существенно развиваться дальше</label>
+                        <input id="3_0_4" name="innovation" type="radio" value="21"/>
+                        <label for="3_0_4">21: Блокер, не дающий нам существенно развиваться дальше</label>
                     </div>
 
                     <p class="panel-subtitle">А если не сделаем?</p>
                     <div data-action="measurement">
-                        <input checked id="3_2_1" name="risk" panel_index="3" type="radio" value="1"/>
-                        <label for="3_2_1">1: Жизнь и работа с кодом не изменятся</label><br>
-                        <input id="3_2_2" name="risk" panel_index="3" type="radio" value="5"/>
-                        <label for="3_2_2">5: Не сможем писать код тестов и модулей быстрее и чище</label><br>
-                        <input id="3_2_3" name="risk" panel_index="3" type="radio" value="13"/>
-                        <label for="3_2_3">13: Не сможем добавить проверки, которых сейчас не хватает</label><br>
-                        <input id="3_2_4" name="risk" panel_index="3" type="radio" value="21"/>
-                        <label for="3_2_4">21: Не сможем добавить целый пласт тестов, которых сейчас не хватает</label>
+                        <input checked id="3_1_1" name="risk" type="radio" value="1"/>
+                        <label for="3_1_1">1: Жизнь и работа с кодом не изменятся</label><br>
+                        <input id="3_1_2" name="risk" type="radio" value="5"/>
+                        <label for="3_1_2">5: Не сможем писать код тестов и модулей быстрее и чище</label><br>
+                        <input id="3_1_3" name="risk" type="radio" value="13"/>
+                        <label for="3_1_3">13: Не сможем добавить проверки, которых сейчас не хватает</label><br>
+                        <input id="3_1_4" name="risk" type="radio" value="21"/>
+                        <label for="3_1_4">21: Не сможем добавить целый пласт тестов, которых сейчас не хватает</label>
                     </div>
 
                     <p class="panel-subtitle">Насколько сложно реализовать эту задачу?</p>
                     <div data-action="measurement">
-                        <input checked id="3_3_1" name="level" panel_index="3" type="radio" value="1"/>
-                        <label for="3_3_1">0.5 WD: Всё понятно, быстрая правка, быстрое ревью</label><br>
-                        <input id="3_3_2" name="level" panel_index="3" type="radio" value="5"/>
-                        <label for="3_3_2">1 WD: Чёткий DoD, решение понятно, быстрое ревью</label><br>
-                        <input id="3_3_3" name="level" panel_index="3" type="radio" value="13"/>
-                        <label for="3_3_3">2 WD: Чёткий DoD, но нужен небольшой ресёрч</label><br>
-                        <input id="3_3_4" name="level" panel_index="3" type="radio" value="21"/>
-                        <label for="3_3_4">4 WD: Неясно, как именно решать проблему</label>
+                        <input checked id="3_2_1" name="level" type="radio" value="1"/>
+                        <label for="3_2_1">0.5 WD: Всё понятно, быстрая правка, быстрое ревью</label><br>
+                        <input id="3_2_2" name="level" type="radio" value="5"/>
+                        <label for="3_2_2">1 WD: Чёткий DoD, решение понятно, быстрое ревью</label><br>
+                        <input id="3_2_3" name="level" type="radio" value="13"/>
+                        <label for="3_2_3">2 WD: Чёткий DoD, но нужен небольшой ресёрч</label><br>
+                        <input id="3_2_4" name="level" type="radio" value="21"/>
+                        <label for="3_2_4">4 WD: Неясно, как именно решать проблему</label>
                     </div>
                 </form>
 
             </div>
+            <!-- New technology -->
             <div class="panel" id="panel-4">
                 <form>
                     <p class="panel-subtitle">Как сильно двигаем выбранное направление тестирования?</p>
                     <div data-action="measurement">
-                        <input checked id="4_1_1" name="innovation" panel_index="4" type="radio" value="1"/>
-                        <label for="4_1_1">1: Хотелка или улучшалка: с ней лучше, чем без неё, но можно и
+                        <input checked id="4_0_1" name="innovation" type="radio" value="1"/>
+                        <label for="4_0_1">1: Хотелка или улучшалка: с ней лучше, чем без неё, но можно и
                             обойтись</label><br>
-                        <input id="4_1_2" name="innovation" panel_index="4" type="radio" value="5"/>
-                        <label for="4_1_2">5: Полезная часть: реализация полезной части, ускорение последующих
+                        <input id="4_0_2" name="innovation" type="radio" value="5"/>
+                        <label for="4_0_2">5: Полезная часть: реализация полезной части, ускорение последующих
                             работ</label><br>
-                        <input id="4_1_3" name="innovation" panel_index="4" type="radio" value="13"/>
-                        <label for="4_1_3">13: Важная часть: P0 функциональность, без которой нет развития существенной
+                        <input id="4_0_3" name="innovation" type="radio" value="13"/>
+                        <label for="4_0_3">13: Важная часть: P0 функциональность, без которой нет развития существенной
                             части направления, блокер части задач</label><br>
-                        <input id="4_1_4" name="innovation" panel_index="4" type="radio" value="21"/>
-                        <label for="4_1_4">21: Критичная часть: P0 функциональность, без которой нет всего направления и
+                        <input id="4_0_4" name="innovation" type="radio" value="21"/>
+                        <label for="4_0_4">21: Критичная часть: P0 функциональность, без которой нет всего направления и
                             его дальнейшего развития, блокер всех задач</label>
                     </div>
 
                     <p class="panel-subtitle">Что будет с направлением, если не сделаем?</p>
                     <div data-action="measurement">
-                        <input checked id="4_2_1" name="risk" panel_index="4" type="radio" value="1"/>
-                        <label for="4_2_1">1: Ничего особо не изменится</label><br>
-                        <input id="4_2_2" name="risk" panel_index="4" type="radio" value="5"/>
-                        <label for="4_2_2">5: Дальнейшее развитие направление станет проще</label><br>
-                        <input id="4_2_3" name="risk" panel_index="4" type="radio" value="13"/>
-                        <label for="4_2_3">13: Этот тип тестов продолжит существовать без части проверок</label><br>
-                        <input id="4_2_4" name="risk" panel_index="4" type="radio" value="21"/>
-                        <label for="4_2_4">21: Всё направление и его дальнейшее развитие теряет смысл</label>
+                        <input checked id="4_1_1" name="risk" type="radio" value="1"/>
+                        <label for="4_1_1">1: Ничего особо не изменится</label><br>
+                        <input id="4_1_2" name="risk" type="radio" value="5"/>
+                        <label for="4_1_2">5: Дальнейшее развитие направление будет затруднено</label><br>
+                        <input id="4_1_3" name="risk" type="radio" value="13"/>
+                        <label for="4_1_3">13: Этот тип тестов продолжит существовать без части проверок</label><br>
+                        <input id="4_1_4" name="risk" type="radio" value="21"/>
+                        <label for="4_1_4">21: Всё направление и его дальнейшее развитие теряет смысл</label>
                     </div>
 
                     <p class="panel-subtitle">Насколько сложно реализовать эту задачу?</p>
                     <div data-action="measurement">
-                        <input checked id="4_3_1" name="level" panel_index="4" type="radio" value="1"/>
-                        <label for="4_3_1">0.5 WD: Всё понятно, быстрая правка, быстрое ревью</label><br>
-                        <input id="4_3_2" name="level" panel_index="4" type="radio" value="5"/>
-                        <label for="4_3_2">1 WD: Чёткий DoD, решение понятно, быстрое ревью</label><br>
-                        <input id="4_3_3" name="level" panel_index="4" type="radio" value="13"/>
-                        <label for="4_3_3">2 WD: Чёткий DoD, но нужен небольшой ресёрч</label><br>
-                        <input id="4_3_4" name="level" panel_index="4" type="radio" value="21"/>
-                        <label for="4_3_4">4 WD: Неясно, как именно решать проблему</label>
+                        <input checked id="4_2_1" name="level" type="radio" value="1"/>
+                        <label for="4_2_1">0.5 WD: Всё понятно, быстрая правка, быстрое ревью</label><br>
+                        <input id="4_2_2" name="level" type="radio" value="5"/>
+                        <label for="4_2_2">1 WD: Чёткий DoD, решение понятно, быстрое ревью</label><br>
+                        <input id="4_2_3" name="level" type="radio" value="13"/>
+                        <label for="4_2_3">2 WD: Чёткий DoD, но нужен небольшой ресёрч</label><br>
+                        <input id="4_2_4" name="level" type="radio" value="21"/>
+                        <label for="4_2_4">4 WD: Неясно, как именно решать проблему</label>
                     </div>
                 </form>
 
             </div>
+            <!-- Future plans -->
             <div class="panel" id="panel-5">
                 <form>
                     <p class="panel-subtitle">Как широки открываемые возможности?</p>
                     <div data-action="measurement">
-                        <input checked id="5_1_1" name="innovation" panel_index="5" type="radio" value="1"/>
-                        <label for="5_1_1">1: Что-то небольшое, редко нужное, не требующее поддержки</label><br>
-                        <input id="5_1_2" name="innovation" panel_index="5" type="radio" value="5"/>
-                        <label for="5_1_2">5: Форточка - решаем несколько существующих проблем в тестировании</label><br>
-                        <input id="5_1_3" name="innovation" panel_index="5" type="radio" value="13"/>
-                        <label for="5_1_3">13: Окно - новый подход, который скажется на разных
+                        <input checked id="5_0_1" name="innovation" type="radio" value="1"/>
+                        <label for="5_0_1">1: Что-то небольшое, редко нужное, не требующее поддержки</label><br>
+                        <input id="5_0_2" name="innovation" type="radio" value="5"/>
+                        <label for="5_0_2">5: Форточка - решаем несколько существующих проблем в тестировании</label><br>
+                        <input id="5_0_3" name="innovation" type="radio" value="13"/>
+                        <label for="5_0_3">13: Окно - новый подход, который скажется на разных
                             аспектах тестирования (например, скриншотное тестирование)</label><br>
-                        <input id="5_1_4" name="innovation" panel_index="5" type="radio" value="21"/>
-                        <label for="5_1_4">21: Дверь - новый подход, который повлияет не только на
+                        <input id="5_0_4" name="innovation" type="radio" value="21"/>
+                        <label for="5_0_4">21: Дверь - новый подход, который повлияет не только на
                             тестирование</label>
                     </div>
 
                     <p class="panel-subtitle">Каково наше будущее без этого новшества?</p>
                     <div data-action="measurement">
-                        <input checked id="5_2_1" name="risk" panel_index="5" type="radio" value="1"/>
-                        <label for="5_2_1">1: Ничего не изменится - принятие всех рисков не несёт заметных
+                        <input checked id="5_1_1" name="risk" type="radio" value="1"/>
+                        <label for="5_1_1">1: Ничего не изменится - принятие всех рисков не несёт заметных
                             проблем, не сказывается на ресурсах команды. Качество тестирования не
                             страдает</label><br>
-                        <input id="5_2_2" name="risk" panel_index="5" type="radio" value="5"/>
-                        <label for="5_2_2">5: Особо ничего не изменится, но периодически будет нужна ручная работа
+                        <input id="5_1_2" name="risk" type="radio" value="5"/>
+                        <label for="5_1_2">5: Особо ничего не изменится, но периодически будет нужна ручная работа
                             одного человека</label><br>
-                        <input id="5_2_3" name="risk" panel_index="5" type="radio" value="13"/>
-                        <label for="5_2_3">13: Нам придётся делать / перепроверять её каждый раз руками, теряя время / качество проверки</label><br>
-                        <input id="5_2_4" name="risk" panel_index="5" type="radio" value="21"/>
-                        <label for="5_2_4">21: Теряем целый пласт логики, из имеющихся инструментов нет ничего, что
+                        <input id="5_1_3" name="risk" type="radio" value="13"/>
+                        <label for="5_1_3">13: Нам придётся делать / перепроверять её каждый раз руками, теряя время / качество проверки</label><br>
+                        <input id="5_1_4" name="risk" type="radio" value="21"/>
+                        <label for="5_1_4">21: Теряем целый пласт логики, из имеющихся инструментов нет ничего, что
                             могло бы заменить</label>
                     </div>
 
                     <p class="panel-subtitle">Насколько сложно реализовать эту задачу?</p>
                     <div data-action="measurement">
-                        <input checked id="5_3_1" name="level" panel_index="5" type="radio" value="1"/>
-                        <label for="5_3_1">0.5 WD: Всё понятно, быстрая правка, быстрое ревью</label><br>
-                        <input id="5_3_2" name="level" panel_index="5" type="radio" value="5"/>
-                        <label for="5_3_2">1 WD: Чёткий DoD, решение понятно, быстрое ревью</label><br>
-                        <input id="5_3_3" name="level" panel_index="5" type="radio" value="13"/>
-                        <label for="5_3_3">2 WD: Чёткий DoD, но нужен небольшой ресёрч</label><br>
-                        <input id="5_3_4" name="level" panel_index="5" type="radio" value="21"/>
-                        <label for="5_3_4">4 WD: Неясно, как именно решать проблему</label>
+                        <input checked id="5_2_1" name="level" type="radio" value="1"/>
+                        <label for="5_2_1">0.5 WD: Всё понятно, быстрая правка, быстрое ревью</label><br>
+                        <input id="5_2_2" name="level" type="radio" value="5"/>
+                        <label for="5_2_2">1 WD: Чёткий DoD, решение понятно, быстрое ревью</label><br>
+                        <input id="5_2_3" name="level" type="radio" value="13"/>
+                        <label for="5_2_3">2 WD: Чёткий DoD, но нужен небольшой ресёрч</label><br>
+                        <input id="5_2_4" name="level" type="radio" value="21"/>
+                        <label for="5_2_4">4 WD: Неясно, как именно решать проблему</label>
                     </div>
                 </form>
 
             </div>
+            <!-- Documentation -->
             <div class="panel" id="panel-6">
                 <form>
                     <p class="panel-subtitle">Как велика описываемая проблема?</p>
                     <div data-action="measurement">
-                        <input checked id="6_1_1" name="innovation" panel_index="6" type="radio" value="1"/>
-                        <label for="6_1_1">1: Что-то небольшое и простое, что мы все знаем и одинаково делаем, но нигде
+                        <input checked id="6_0_1" name="innovation" type="radio" value="1"/>
+                        <label for="6_0_1">1: Что-то небольшое и простое, что мы все знаем и одинаково делаем, но нигде
                             это не записали</label><br>
-                        <input id="6_1_2" name="innovation" panel_index="6" type="radio" value="5"/>
-                        <label for="6_1_2">5: Регулируем один из аспектов нашей работы в конкретных
+                        <input id="6_0_2" name="innovation" type="radio" value="5"/>
+                        <label for="6_0_2">5: Регулируем один из аспектов нашей работы в конкретных
                             ситуациях</label><br>
-                        <input id="6_1_3" name="innovation" panel_index="6" type="radio" value="13"/>
-                        <label for="6_1_3">13: Есть понятная проблема и набор вопросов для проработки</label><br>
-                        <input id="6_1_4" name="innovation" panel_index="6" type="radio" value="21"/>
-                        <label for="6_1_4">21: Большой и долгий процесс, много открытых вопросов, большую проблему
+                        <input id="6_0_3" name="innovation" type="radio" value="13"/>
+                        <label for="6_0_3">13: Есть понятная проблема и набор вопросов для проработки</label><br>
+                        <input id="6_0_4" name="innovation" type="radio" value="21"/>
+                        <label for="6_0_4">21: Большой и долгий процесс, много открытых вопросов, большую проблему
                             закрываем</label>
                     </div>
 
                     <p class="panel-subtitle">Что эта дока предотвращает?</p>
                     <div data-action="measurement">
-                        <input checked id="6_2_1" name="risk" panel_index="6" type="radio" value="1"/>
-                        <label for="6_2_1">1: Используем разную терминологию и некорректно понимаем друг
+                        <input checked id="6_1_1" name="risk" type="radio" value="1"/>
+                        <label for="6_1_1">1: Используем разную терминологию и некорректно понимаем друг
                             друга</label><br>
-                        <input id="6_2_2" name="risk" panel_index="6" type="radio" value="5"/>
-                        <label for="6_2_2">5: Разные подходы в тестировании / автоматизации, удлиним ревью</label><br>
-                        <input id="6_2_3" name="risk" panel_index="6" type="radio" value="13"/>
-                        <label for="6_2_3">13: Разные ожидания от глобальных результатов нашей работы</label><br>
-                        <input id="6_2_4" name="risk" panel_index="6" type="radio" value="21"/>
-                        <label for="6_2_4">21: Рискуем потерять контекст целой фичи, создаём жёсткий боттлнек в команде
+                        <input id="6_1_2" name="risk" type="radio" value="5"/>
+                        <label for="6_1_2">5: Разные подходы в тестировании / автоматизации, удлиним ревью</label><br>
+                        <input id="6_1_3" name="risk" type="radio" value="13"/>
+                        <label for="6_1_3">13: Разные ожидания от глобальных результатов нашей работы</label><br>
+                        <input id="6_1_4" name="risk" type="radio" value="21"/>
+                        <label for="6_1_4">21: Рискуем потерять контекст целой фичи, создаём жёсткий боттлнек в команде
                             тестирования</label>
                     </div>
 
                     <p class="panel-subtitle">Насколько сложно реализовать эту задачу?</p>
                     <div data-action="measurement">
-                        <input checked id="6_3_1" name="level" panel_index="6" type="radio" value="1"/>
-                        <label for="6_3_1">0.5 WD: Всё понятно, быстрая правка, быстрое ревью</label><br>
-                        <input id="6_3_2" name="level" panel_index="6" type="radio" value="5"/>
-                        <label for="6_3_2">1 WD: Чёткий DoD, решение понятно, быстрое ревью</label><br>
-                        <input id="6_3_3" name="level" panel_index="6" type="radio" value="13"/>
-                        <label for="6_3_3">2 WD: Чёткий DoD, но нужен небольшой ресёрч</label><br>
-                        <input id="6_3_4" name="level" panel_index="6" type="radio" value="21"/>
-                        <label for="6_3_4">4 WD: Неясно, как именно решать проблему</label>
+                        <input checked id="6_2_1" name="level" type="radio" value="1"/>
+                        <label for="6_2_1">0.5 WD: Всё понятно, быстрая правка, быстрое ревью</label><br>
+                        <input id="6_2_2" name="level" type="radio" value="5"/>
+                        <label for="6_2_2">1 WD: Чёткий DoD, решение понятно, быстрое ревью</label><br>
+                        <input id="6_2_3" name="level" type="radio" value="13"/>
+                        <label for="6_2_3">2 WD: Чёткий DoD, но нужен небольшой ресёрч</label><br>
+                        <input id="6_2_4" name="level" type="radio" value="21"/>
+                        <label for="6_2_4">4 WD: Неясно, как именно решать проблему</label>
                     </div>
                 </form>
             </div>
 
+            <!-- Bugs -->
             <div class="panel" id="panel-0">
                 <form>
-                    <p class="panel-subtitle">Массовость</p>
+                    <p class="panel-subtitle">Массовость?</p>
                     <div data-action="bug_weight">
-                        <input checked id="0_1_1" name="mass" panel_index="0" type="radio" value="1"/>
-                        <label for="0_1_1">1: Единичная проблема</label><br>
-                        <input id="0_1_2" name="mass" panel_index="0" type="radio" value="2"/>
-                        <label for="0_1_2">2: Затронута группа пользователей</label><br>
-                        <input id="0_1_3" name="mass" panel_index="0" type="radio" value="3"/>
-                        <label for="0_1_3">3: Затрагивает большинство пользователей</label><br>
+                        <input checked id="0_0_1" name="mass" type="radio" value="1"/>
+                        <label for="0_0_1">1: Единичная проблема</label><br>
+                        <input id="0_0_2" name="mass" type="radio" value="2"/>
+                        <label for="0_0_2">2: Затронута группа пользователей</label><br>
+                        <input id="0_0_3" name="mass" type="radio" value="3"/>
+                        <label for="0_0_3">3: Затрагивает большинство пользователей</label><br>
                     </div>
 
-                    <p class="panel-subtitle">Насколько блокирует</p>
+                    <p class="panel-subtitle">Насколько блокирует?</p>
                     <div data-action="bug_weight">
-                        <input checked id="0_2_1" name="block" panel_index="0" type="radio" value="1"/>
-                        <label for="0_2_1">1: Не блокирует</label><br>
-                        <input id="0_2_2" name="block" panel_index="0" type="radio" value="2"/>
-                        <label for="0_2_2">2: Блокирует, но есть обходное решение</label><br>
-                        <input id="0_2_3" name="block" panel_index="0" type="radio" value="3"/>
-                        <label for="0_2_3">3: Блокирует полностью</label><br>
+                        <input checked id="0_1_1" name="block" type="radio" value="1"/>
+                        <label for="0_1_1">1: Не блокирует</label><br>
+                        <input id="0_1_2" name="block" type="radio" value="2"/>
+                        <label for="0_1_2">2: Блокирует, но есть обходное решение</label><br>
+                        <input id="0_1_3" name="block" type="radio" value="3"/>
+                        <label for="0_1_3">3: Блокирует полностью</label><br>
                     </div>
 
-                    <p class="panel-subtitle">Критичность области</p>
+                    <p class="panel-subtitle">Критичность области?</p>
                     <div data-action="bug_weight">
-                        <input checked id="0_3_1" name="critical" panel_index="0" type="radio" value="1"/>
-                        <label for="0_3_1">1: Нормальная</label><br>
-                        <input id="0_3_2" name="critical" panel_index="0" type="radio" value="3"/>
-                        <label for="0_3_2">3: Критичная</label><br>
+                        <input checked id="0_2_1" name="critical" type="radio" value="1"/>
+                        <label for="0_2_1">1: Нормальная</label><br>
+                        <input id="0_2_2" name="critical" type="radio" value="3"/>
+                        <label for="0_2_2">3: Критичная</label><br>
                     </div>
                 </form>
             </div>
@@ -333,6 +340,7 @@
             <p class="total" id="total-4">20</p>
             <p class="total" id="total-5">20</p>
             <p class="total" id="total-6">20</p>
+            <button type="button" data-action="copyElement">Скопировать оценку</button>
         </div>
     </div>
 
