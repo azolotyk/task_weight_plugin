@@ -44,24 +44,34 @@ function getCurrentId() {
     }
 }
 
-// Собираем текст из выбранных опций
+// Собираем текст из выбранных опций оценки
 function getSelectedOptions() {
-    let panel_id = window.getCurrentId();
-
+    // Итоговый текст
     let final_text = [];
 
+    // Идентификатор выбранной категорий
+    let panel_id = window.getCurrentId();
     final_text.push('Категория — ' + document.getElementById('tab-' + panel_id).textContent)
 
+    // Критерии оценки — зависят от типа тикета (баг или техдолг)
     let criterias_type = panel_id === '0' ? ["mass", "block", "critical"] : ["innovation", "risk", "level"]
 
+    // Таб выбранного типа тикета
     let panel = document.getElementById('panel-' + panel_id);
+    // Список всех критериев оценки для выбранного типа тикета
     let criterias = panel.querySelectorAll("[class='panel-subtitle']")
     criterias.forEach((criteria, key) => {
+        // Идентификатор выбранной оценки
         let selected_id = panel.querySelector('input[name="' + criterias_type[key] + '"]:checked').id;
-        let value = panel.querySelector('label[for="' + selected_id +'"]').innerHTML;
+        // Формулировка выбранной оценки
+        let value = panel.querySelector('label[for="' + selected_id +'"]').textContent;
+        // Очищаем текст от переносов строк и лишних пробелов
+        value = value.replace(/\s+/g, ' ').trim();
+        // Текстовое представление критерия и оценки
         final_text.push(criteria.textContent + ' ' + value)
     })
 
+    // Итоговая оценка
     final_text.push('Итоговая оценка: ' + document.getElementById('total-' + panel_id).textContent)
     return final_text
 }

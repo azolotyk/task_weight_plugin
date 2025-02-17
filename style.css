@@ -79,7 +79,7 @@ h1 {
 #four:checked ~ .result #total-4,
 #five:checked ~ .result #total-5,
 #six:checked ~ .result #total-6 {
-    display: block;
+    display: inline-block;
 }
 
 /*=================== Разделы и их наполнение =============================*/
@@ -144,7 +144,6 @@ h1 {
     width: 90%;
     /*   max-width:887px; */
     border-radius: 0px 0px 10px 10px;
-    overflow: hidden;
     padding: 10px 20px;
     margin-top: -10px;
     border-top: 2px solid #000;
@@ -173,4 +172,20 @@ h1 {
     /*   cursor: pointer; */
 }
 
+/* Кнопка копирования */
+.copy-btn {
+    cursor: pointer;
+    padding: 4px 8px;
+    margin: 2px 2px;
+    background: #fff;
+    border-radius: 10px 10px 10px 10px;
+    border-color: #224249;
+    box-shadow: 0 0.5rem 0.9rem #22424982;
+    position: relative;
+    bottom: 4px;
+    left: 16px;
+}
+.copy-btn:active {
+    background: #c6ddf4b3;
+}
 /*=========================================================================*/
