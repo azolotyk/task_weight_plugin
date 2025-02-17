@@ -51,7 +51,7 @@ function getSelectedOptions() {
 
     // Идентификатор выбранной категорий
     let panel_id = window.getCurrentId();
-    final_text.push('Категория — ' + document.getElementById('tab-' + panel_id).textContent)
+    final_text.push('*Категория* — ' + document.getElementById('tab-' + panel_id).textContent)
 
     // Критерии оценки — зависят от типа тикета (баг или техдолг)
     let criterias_type = panel_id === '0' ? ["mass", "block", "critical"] : ["innovation", "risk", "level"]
@@ -68,11 +68,11 @@ function getSelectedOptions() {
         // Очищаем текст от переносов строк и лишних пробелов
         value = value.replace(/\s+/g, ' ').trim();
         // Текстовое представление критерия и оценки
-        final_text.push(criteria.textContent + ' ' + value)
+        final_text.push('* ' + criteria.textContent + '\n** ' + value)
     })
 
     // Итоговая оценка
-    final_text.push('Итоговая оценка: ' + document.getElementById('total-' + panel_id).textContent)
+    final_text.push('*Итоговая оценка:* ' + document.getElementById('total-' + panel_id).textContent)
     return final_text
 }
 
