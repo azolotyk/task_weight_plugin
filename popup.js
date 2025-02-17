@@ -72,7 +72,7 @@ function getSelectedOptions() {
     })
 
     // Итоговая оценка
-    final_text.push('*Итоговая оценка:* ' + document.getElementById('total-' + panel_id).textContent)
+    final_text.push('\n*Итоговая оценка:* ' + document.getElementById('total-' + panel_id).textContent)
     return final_text
 }
 
